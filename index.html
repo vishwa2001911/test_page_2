@@ -18,6 +18,7 @@
         body{
             background-color: #FBFCFC;
             font-family:monospace;
+            font-size: 20px;
         }
 
         nav div span {
@@ -46,7 +47,7 @@
             text-decoration: none;
             color: #17202A;
             padding: 5px;
-            font-size: 15px;
+            font-size: 20px;
             font-weight: bold;
             border: solid #FBFCFC 1px;
             transition: 0.2ms;
@@ -60,10 +61,11 @@
 
         main{
             width: 100%;
-            height: calc(100vh - 70px);
+            height: calc(78vh - 50px);
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
         main div {
             margin: 10px;
@@ -73,6 +75,8 @@
             border-radius: 100%;
             border: none;
             image-rendering:crisp-edges;
+            width: 300px;
+            filter: grayscale(90%);
         }
 
         .box-main{
@@ -154,9 +158,8 @@
             display: flex;
             justify-content:center;
             align-items: center;
-            margin: 30px;
-            border: solid #17202A 2px;
-            border-radius: 20px;
+            margin: 20px;
+            
 
         }
 
@@ -190,12 +193,12 @@
         }
 
         .p{
-            font-size: 16px;
+            font-size: 20px;
 
         }
 
         .edu{
-            font-size: 15px;
+            font-size: 20px;
         }
 
         .skills{
@@ -282,7 +285,85 @@
             align-items: center;
             font-size: 16px;
         }
+
+        .box-about img{
+            width: 400px;
+        }
+
+
+        @media screen and (max-width: 1050px) {
+        .box-about img{
+            display: none;
+
+        }
+
+        main div img{
+            width: 250px;
+        }
+        }
+
+        @media screen and (max-width: 700px) {
+
+        main {
+                flex-direction: column;
+                margin-bottom: 50px;
+                margin-top: 50px;
+        }
+
+
+        main div img{
+            width: 200px;
+        }
+
         
+        .box{    
+            width: 400px;
+        }   
+        }
+        
+        @media screen and (max-width: 600px) {
+
+        .education{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box{
+            width: 400px;
+            
+        }
+
+        .footer-text{
+            font-size: 15px;
+        }
+        
+        }
+        @media screen and (max-width: 600px) {
+
+            nav ul {
+                display: none;
+            }
+            .logo span{
+                font-size: 40px;
+            }
+
+            .p{
+            font-size: 18px;
+
+            }
+
+            .box{
+            width: 350px;
+            
+            }
+
+            .footer-text{
+            font-size: 10px;
+        }
+        
+        }
+
+
 
         
 
@@ -317,14 +398,14 @@
 
     <main>
         <div class="box-img">
-            <img src="https://github.com/vishwa2001911/Project_/blob/master/VishwaPrabhath%20cv/my.jpg?raw=true" alt="image" width="300px" >
+            <img src="https://github.com/vishwa2001911/portfolio/blob/main/my.jpg?raw=true" alt="image" >
         </div>
         <div class="box-main">
             <div class="h4">Hello I'm</div>
             <div class="h1">Vishwa Prabhath</div>
             <div class="h3">Frontend Developer</div>
             <div class="buttons">
-                <span class="span-btn"><a href="#" class="span-btn-a" id="a1">Download cv</a></span>
+                <span class="span-btn"><a href="https://github.com/vishwa2001911/test_page_2/blob/e51ac2c326f3a93ed3152b96258c32dfb401d4c8/Jayasinghe%20W.pdf" target="_blank" class="span-btn-a" id="a1" download="">Download resume</a></span>
                 <span class="span-btn"><a href="#" class="span-btn-a" id="a2">Contact Info</a></span>
             </div>
             <div class="social">
@@ -352,7 +433,7 @@
         </div>
         <div class="container-about">
             <div class="box-about" >
-                <img style="border-radius: 20px;" src="https://github.com/vishwa2001911/Project_/blob/master/VishwaPrabhath%20cv/my.jpg?raw=true" width="300px" alt="">
+                <img style="border-radius: 20px;" src="https://cdn-icons-png.flaticon.com/512/4257/4257483.png" alt="">
             </div>
             <div class="box-about">
                 <div class="education">
