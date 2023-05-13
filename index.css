@@ -180,7 +180,7 @@ main div img{
 }
 
 .box-about{
-    margin: 20px;
+    margin: 10px;
 }
 
 .p{
@@ -256,7 +256,7 @@ div ul li a:hover, .span-social a:hover, #phone:hover {
 }
 
 .contact-all{
-    width: 350px;
+    width: 300px;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -395,6 +395,10 @@ main div img{
     align-items: center;
 }
 
+.projects {
+    padding-left: 10px;
+}
+
 .projects-box {
     width: 250px;
     margin-left: 10%;
@@ -425,7 +429,7 @@ main div img{
     }
 
     .p{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .box{
