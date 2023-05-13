@@ -402,7 +402,7 @@ main div img{
 
 .projects-box {
     width: 250px;
-    
+    text-align: center;
 }
 
 .projects-box img{
@@ -413,7 +413,7 @@ main div img{
 
 
 .boxx h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer-text{
