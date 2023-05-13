@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #FBFCFC;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+nav div span {
+    font-size: 25px;
+    font-weight: bold;
+}
+header{
+    width: 100%;
+    height: 70px;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 5px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 2px;
+    padding: 4px;
+    list-style: none;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #17202A;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid #FBFCFC 1px;
+    transition: 0.2ms;
+}
+nav ul li a:hover{
+    border: solid #17202A 1px;
+    color: #FBFCFC;
+    background-color: #17202A;
+    border-radius: 20px;
+}
+
+main{
+    width: 100%;
+    height: calc(78vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main div {
+    margin: 10px;
+}
+
+main div img{
+    border-radius: 100%;
+    border: none;
+    image-rendering:crisp-edges;
+    width: 300px;
+    filter: grayscale(90%);
+}
+
+.box-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+            }
+
+
+
+.h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 7px;
+}
+
+.h1{
+    font-size: 27px;
+    font-weight: bold;
+    margin: 7px;
+}
+
+.h3{
+    font-size: 20px;
+    font-weight:bolder;
+    margin-bottom: 100px;
+    margin: 6px;
+    color: #566573;        
+}
+
+
+
+.span-btn-a {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    border: solid #17202A 2px ;
+}
+
+#a1{
+    color: #17202A;
+    transition: 0.3s;
+}
+
+#a1:hover{
+    background-color: #17202A;
+    color: #FBFCFC;
+}
+
+#a2{
+    color: #FBFCFC;
+    background-color: #17202A;
+    transition: 0.3s;
+}
+
+#a2:hover{
+    background-color: #FBFCFC;
+    color: #17202A;
+}
+
+.span-social{
+    padding: 5px;
+    margin:0;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #17202A;
+    padding: 10px;
+    
+    
+}
+
+
+.container-about{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+    
+
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+
+}
+
+.uni{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    margin: 20px 36px 20px 5px;
+    border: solid #17202A 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.about-header{
+    margin: 50px 10px 40px;
+    padding: 10px;
+}
+
+.box-about{
+    margin: 20px;
+}
+
+.p{
+    font-size: 20px;
+
+}
+
+.edu{
+    font-size: 20px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box{
+    
+    width: 600px;
+    height: auto;
+    border: solid #17202A 2px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+
+.boxx{
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    
+}
+
+.boxx>div{
+    margin-right: 10px;
+
+} 
+
+div ul li {
+    display: inline;
+    list-style: none;
+    margin-top: 10px;
+}
+
+div ul li a, #phone{
+    text-decoration: none;
+    color: #17202A;
+    padding: 5px;
+    transition: .3s;
+}
+
+div ul li a:hover, .span-social a:hover, #phone:hover {
+    color: #566573;
+    transition: .3s;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact-all{
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: solid #17202A 2px;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.box-about img{
+    width: 400px;
+}
+
+.projects{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.projects-box img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.projects-box {
+    padding: 20px;
+    width: 350px;
+    border: solid #17202A 1px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.projects-box:hover {
+    box-shadow: 3px 3px #c6cfd8;
+    transition: 0.3s;
+}
+
+.projects-box h4, button {
+    margin: 5px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid #17202A 2px;
+    background-color: #FBFCFC;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #17202A;
+    color: #FBFCFC;
+
+}
+
+.number-box{
+    width: 200px;
+    background-color: #17202A;
+    color: #c6cfd8;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: -100%;
+    bottom: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+
+.number-box > span {
+    margin: 10px;
+    font-variant-numeric: normal;
+    
+}
+
+
+
+@media screen and (max-width: 1050px) {
+.box-about img{
+    display: none;
+
+}
+
+main div img{
+    width: 250px;
+}
+}
+
+@media screen and (max-width: 700px) {
+
+main {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 50px;
+}
+
+
+main div img{
+    width: 200px;
+}
+
+
+.box{    
+    width: 400px;
+}   
+}
+
+@media screen and (max-width: 600px) {
+
+.education{
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-box {
+    width: 250px;
+    margin-left: 10%;
+}
+
+.projects-box img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+.boxx h2 {
+    font-size: 20px;
+}
+
+.footer-text{
+    font-size: 15px;
+}
+
+
+
+    nav ul {
+        display: none;
+    }
+    .logo span{
+        font-size: 30px;
+    }
+
+    .p{
+        font-size: 15px;
+    }
+
+    .box{
+    width: 330px;
+    
+    }
+
+    .footer-text{
+    font-size: 8px;
+}
+
+}
+
+
+

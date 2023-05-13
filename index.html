@@ -6,377 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishwa Prabhath</title>
 
+    <link rel="stylesheet" href="index.css">
 
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            
-        }
-
-        body{
-            background-color: #FBFCFC;
-            font-family:monospace;
-            font-size: 20px;
-        }
-
-        nav div span {
-            font-size: 25px;
-            font-weight: bold;
-        }
-        header{
-            width: 100%;
-            height: 70px;
-        }
-        header nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 40px 5px;
-        }
-
-        nav ul li{
-            display: inline;
-            margin: 2px;
-            padding: 4px;
-            list-style: none;
-            
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #17202A;
-            padding: 5px;
-            font-size: 20px;
-            font-weight: bold;
-            border: solid #FBFCFC 1px;
-            transition: 0.2ms;
-        }
-        nav ul li a:hover{
-            border: solid #17202A 1px;
-            color: #FBFCFC;
-            background-color: #17202A;
-            border-radius: 20px;
-        }
-
-        main{
-            width: 100%;
-            height: calc(78vh - 50px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        main div {
-            margin: 10px;
-        }
-
-        main div img{
-            border-radius: 100%;
-            border: none;
-            image-rendering:crisp-edges;
-            width: 300px;
-            filter: grayscale(90%);
-        }
-
-        .box-main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-                    }
-
-        
-
-        .h4{
-            font-size: 18px;
-            font-weight: bold;
-            margin: 7px;
-        }
-
-        .h1{
-            font-size: 27px;
-            font-weight: bold;
-            margin: 7px;
-        }
-
-        .h3{
-            font-size: 20px;
-            font-weight:bolder;
-            margin-bottom: 100px;
-            margin: 6px;
-            color: #566573;        
-        }
-
-
-
-        .span-btn-a {
-            padding: 10px;
-            font-weight: bold;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 15px;
-            border: solid #17202A 2px ;
-        }
-
-        #a1{
-            color: #17202A;
-            transition: 0.3s;
-        }
-
-        #a1:hover{
-            background-color: #17202A;
-            color: #FBFCFC;
-        }
-
-        #a2{
-            color: #FBFCFC;
-            background-color: #17202A;
-            transition: 0.3s;
-        }
-
-        #a2:hover{
-            background-color: #FBFCFC;
-            color: #17202A;
-        }
-
-        .span-social{
-            padding: 5pxpx;
-            margin:0;
-        }
-
-        .social a{
-            text-decoration: none;
-            font-size: 10px;
-            color: #17202A;
-            padding: 10px;
-            
-            
-        }
-
-
-        .container-about{
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            margin: 20px;
-            
-
-        }
-
-        .education{
-            display: flex;
-            justify-content: center;
-        
-        }
-
-        .uni{
-            width: 250px;
-            height: 150px;
-            margin: 20px 36px 20px 5px;
-            border: solid #17202A 2px;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        
-
-        .about-header{
-            margin: 50px 10px 40px;
-            padding: 10px;
-        }
-
-        .box-about{
-            margin: 20px;
-        }
-
-        .p{
-            font-size: 20px;
-
-        }
-
-        .edu{
-            font-size: 20px;
-        }
-
-        .skills{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .box{
-            
-            width: 600px;
-            height: auto;
-            border: solid #17202A 2px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            padding: 10px;
-
-        }
-
-        .box-1{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
-            margin-left: 20px;
-            padding: 10px;
-            
-        }
-
-        .boxx{
-            display: flex;
-            flex: 1;
-            
-        }
-
-        .boxx>div{
-            margin-right: 10px;
-
-        } 
-
-        div ul li {
-            display: inline;
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        div ul li a{
-            text-decoration: none;
-            color: #17202A;
-            padding: 5px;
-            transition: .3s;
-        }
-
-        div ul li a:hover, .span-social a:hover{
-            color: #566573;
-            transition: .3s;
-        }
-
-        .contact{
-            width: 100%;
-        }
-
-        .contact-all{
-            width: 300px;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-            border: solid #17202A 2px;
-        }
-
-        .contact-box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        footer{
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .box-about img{
-            width: 400px;
-        }
-
-
-        @media screen and (max-width: 1050px) {
-        .box-about img{
-            display: none;
-
-        }
-
-        main div img{
-            width: 250px;
-        }
-        }
-
-        @media screen and (max-width: 700px) {
-
-        main {
-                flex-direction: column;
-                margin-bottom: 50px;
-                margin-top: 50px;
-        }
-
-
-        main div img{
-            width: 200px;
-        }
-
-        
-        .box{    
-            width: 400px;
-        }   
-        }
-        
-        @media screen and (max-width: 600px) {
-
-        .education{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .box{
-            width: 400px;
-            
-        }
-
-        .boxx h2 {
-            font-size: 20px;
-        }
-
-        .footer-text{
-            font-size: 15px;
-        }
-        
-        }
-        @media screen and (max-width: 600px) {
-
-            nav ul {
-                display: none;
-            }
-            .logo span{
-                font-size: 30px;
-            }
-
-            .p{
-                font-size: 15px;
-            }
-
-            .box{
-            width: 330px;
-            
-            }
-
-            .footer-text{
-            font-size: 8px;
-        }
-        
-        }
-
-
-
-        
-
-        
-
-        
-
-
-    </style>
 </head>
 <body>
     <header>
@@ -438,7 +69,8 @@
         </div>
         <div class="container-about">
             <div class="box-about" >
-                <img style="border-radius: 20px;" src="https://cdn-icons-png.flaticon.com/512/4257/4257483.png" alt="">
+                <img style="border-radius: 20px;" src="k.png" alt="">
+                
             </div>
             <div class="box-about">
                 <div class="education">
@@ -449,27 +81,12 @@
                             </svg>
                         </div>
                         <div class="h3">
-                            University
-                        </div>
-                        <div class="edu" style="text-align: center;">
-                            Bachelor of Software Engineering Honours
-                            (Undergraduate) 2023 
-                        </div>
-                    </div>
-                    <div class="uni">
-                        <div class="uni-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg>
-                        </div>
-                        <div class="h3">
-                            A/L
+                            Education
                         </div>
                         <div class="edu">
                             <p>
-                            Chemistry - B<br>
-                            Biology  -  B<br>
-                            Physics  -  C
+                                BSc(Hons) Software Engineering <br>
+                                (Undergraduate)
                             </p>
                         </div>
                     </div>
@@ -481,7 +98,35 @@
                 </div>
             </div>
         </div>
+
+         <!-- Personal Project-->
+
+         <div class="about-header" align="center">
+            <h3 style="color: #566573;">My Personal Projects</h3>
+        </div>
+
+        <div class="projects">
+            <div class="projects-box">
+                <img src="https://images.unsplash.com/photo-1628784230353-5bee16e2f005?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+                <h4>Web Scraping Top-Jobs site</h4>
+                <button class="span-btn" id="btn">Github</button>
+            </div>
+            <div class="projects-box">
+                <img src="https://images.unsplash.com/photo-1628784230353-5bee16e2f005?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+                <h4>web app using api </h4>
+                <button class="span-btn" id="btn">Github</button>
+            </div>
+            <div class="projects-box">
+                <img src="https://images.unsplash.com/photo-1628784230353-5bee16e2f005?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+                <h4>Web Scraping Dramacool site</h4>
+                <button class="span-btn" id="btn">Github</button>
+            </div>
+        </div>
     </div>
+
+
+
+
 
     <div class="skills">
         <div class="about-header" align="center">
@@ -595,10 +240,28 @@
                             </svg>
                         </a>
                     </li>
+
+                    <li class="ic">
+                        
+                        <span id="phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                            </svg>
+                        </span>
+            
+                    </li>
+                    
                 </ul>
             </div>
 
         </div>
+    </div>
+
+    <div class="number-box">
+        <span><h4>0782548010</h4></span>
+        <span style="font-weight: bolder;" id="x" >
+            X
+        </span>
     </div>
 
     <footer>
@@ -606,5 +269,21 @@
             Copyright &copy; Vishwa Prabhath Jayasinghe. All Rights Reserved
         </div>
     </footer>
+
+
+    <script>
+
+        const phone = document.querySelector("#phone");
+        const x = document.querySelector("#x");
+        const numberBox = document.querySelector(".number-box");
+
+        x.onclick = () => {
+            numberBox.style.right = "-100%"
+        }
+
+        phone.onclick =  () =>{
+            numberBox.style.right = "-20px"
+        }
+    </script>
 </body>
 </html>
