@@ -385,6 +385,7 @@ main div img{
 
 .box{    
     width: 400px;
+    padding: 0;
 }   
 }
 
@@ -401,7 +402,7 @@ main div img{
 
 .projects-box {
     width: 250px;
-    margin-left: 10%;
+    
 }
 
 .projects-box img{
@@ -419,26 +420,31 @@ main div img{
     font-size: 15px;
 }
 
+.projects-box h4{
+    font-size: 17px;
+}
 
 
-    nav ul {
-        display: none;
-    }
-    .logo span{
-        font-size: 30px;
-    }
 
-    .p{
-        font-size: 13px;
-    }
 
-    .box{
-    width: 330px;
-    
-    }
+nav ul {
+    display: none;
+}
+.logo span{
+    font-size: 30px;
+}
 
-    .footer-text{
-    font-size: 8px;
+.p{
+    font-size: 13px;
+}
+
+.box{
+width: 330px;
+
+}
+
+.footer-text{
+font-size: 8px;
 }
 
 }
